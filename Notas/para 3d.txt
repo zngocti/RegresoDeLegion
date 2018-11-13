@@ -1,0 +1,40 @@
+leon
+fuente de vida
+angel
+forja
+
+bakeo
+
+hace los ataques 4
+jugador look at
+
+menu
+instrucciones
+creditos
+
+pool de enemigos
+enemmigos look at
+
+variedad de enemigos
+trampas
+ataque enemigo distancia
+
+sonidos
+
+oro
+esferas de vida
+experiencia
+contador de wave
+contador de enemigos eliminados
+
+top de puntajes
+
+sangre y chispas(?)
+luz de lvl mejorada
+
+
+Caminar
+Impacto
+Atacar
+Morir
+Reset

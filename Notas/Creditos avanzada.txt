@@ -1,0 +1,234 @@
+tratar de tener una sola carga de imagen para los sprites
+
+debug dinamico (que use dll) y release estatico (portable)
+(openal -para el sonido- usa el post build event para copiarse)
+release sin consola, debug con consola
+leak detector solo en debug
+
+
+
+sfml
+https://www.sfml-dev.org/
+
+visual leak detector
+https://vld.codeplex.com/
+https://kinddragon.github.io/vld/
+(dbghelp.dll microsoft.Dt...bla.mainfest vld_x86.dll vld_x86.pdb en debug)
+
+rapidxml
+http://rapidxml.sourceforge.net/
+
+Plump à de Steven Whitfield
+https://www.dafont.com/es/plump.font
+
+Poner todo bajo un namespace
+
+
+Credit "Kenney.nl" or "www.kenney.nl", this is not mandatory.
+https://opengameart.org/content/pirate-pack-190
+
+
+https://opengameart.org/content/medieval-game-button-pack
+gui
+
+
+400x174
+
+352 x 56
+
+
+copy archivo C:\Users\Octavio\Desktop\
+
+
+
+
+copy "C:\Users\Octavio\Desktop\JuegoAvanzada\Proyecto Juego\Libs\SFML-2.4.2\bin\openal32.dll" "C:\Users\Octavio\Desktop\JuegoAvanzada\Proyecto Juego\Release\"
+
+
+
+tiled
+https://gist.github.com/JSchaenzle/2726944
+https://semidtor.wordpress.com/2013/03/29/rapidxml-mini-tutorial/
+https://stackoverflow.com/questions/2808022/how-to-parse-the-xml-file-in-rapidxml
+https://stackoverflow.com/questions/5443073/read-a-line-from-xml-file-using-c/5443512#5443512
+
+
+Boids Flocking IA en manada
+
+
+
+
+juego llama a administrador de escenas
+juego llama a renderizar en ventana (loop update)
+administrador de escenas tiene una lista/pila de escenas
+
+las escenas tienen draw o algo similar para que lo agarre el administrador y lo dibuje
+
+donde va el node
+en el h van los const despues de la funcion para no modificar en los geters?
+los destructores con virtual?
+los operators van en el h?
+Lista::operator ??
+Lista : node(new...)
+template en cada lugar
+
+
+travis CI continious integration, es un server gratuito para hacer pruebas del codigo por cada push
+se configura como hay que hacer el build y todos los detalles
+se incluye un archivo de la configuracion del sistema hecho segun la documentacion de travis
+
+unity tiene el suyo que es cloudbuild
+
+
+background
+https://www.pexels.com/photo/sunset-ship-boat-sea-37730/
+https://pixabay.com/es/barco-strom-mar-noche-fantas%C3%ADa-2202910/
+
+
+destructor gameobject, todo deberia ser new?
+crear clase estatica?
+
+poner try catch con las cargas de imagenes
+
+
+
+
+
+
+
+
+sfgui
+
+con los tags en git puedo marcar versiones
+al marcar el tag se hace en head que es donde uno esta ahora
+al hacer el push despues hay que incluir tags
+al subir un tag uno puede elegir asociar unos archivos, para tener el build (esta opcion no esta en todos lso git)
+el create new release se hace desde la pagina, uno elige un tag de los que ya se hicieron y se suben los zip y lo que fuera
+
+eXpl0it3r SmallGameEngine
+
+
+
+sacar del gitignore el .user
+
+
+
+design patterns gamma helm jhonson vlissides (esta en español)
+head first design patterns (muy bueno para iniciarse en patrones de diseño)
+game programming patterns robert nystrom (?)
+
+cada clase deberia encargarse de una sola cosa (motivo por el cual el singleton es polemico ya que plantea dos soluciones)
+
+
+las cosas estaticas no tienen un orden asegurado
+
+ver singleton y patron observer
+
+
+
+
+
+
+gameObjectsActuales(primerEscena->getGameObjects()), 
+
+
+
+
+
+musica
+sonido
+animacion explosion
+bote sin atque
+barco chico dispara adelante
+barco dos cañones diagolnal
+barco disparos de costado
+islas
+patrones
+~agua
+
+-disparos
+-resistencia
+-puntos
+
+poseer
+
+usar el check timers
+
+borrar main
+separar cpps en carpetas virtuales
+
+cambiar de lugar los assets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bromeon (thor?)
+
+strategy desing pattern, que atacar sea una clase y que cada personaje tenga un ataque, cosa de poder cambiarla en runtime
+decorator design pattern, attachear funcionalidades
+
+physicsFS (no es sobre fisicas, es para comprimir assets)
+zlib es otra libreria de compresion
+
+vector math godot
+3d math primer
+
+effective c++
+
+si solo uso punteros y referencias mejor hacer foward declaration de la clase y despues incluir el h en el cpp
+
+unique pointer (para encapsular punteros, hacer conteos de referencias, etc)
+shared pointer / smart pointer
+
+
+
+
+
+
+
+recordar el .user del git ignore
+
+
+
+
+git tiene una utilidad llamada stash que es para por ejemplo separar algun cambio que estamos haciedno de manera local sin comitear
+para que si tengo que hacer pull no correr el riesgo de que me pise lo que hago
+stash save, include and truck es para incluir lo que no esta versionado
+se recupera con stash pop
+
+si alguien modifica justo el archivo que estabas cambiando y recueras del stash hay que resolver conflictos
+
+para hacer cambios en la funcionalidad como pruebas uno puede hacer un nuevo branch, el cual podria salir desde el master
+switch/checkout hace el cambio de branch
+al crear un branch hay una opcion de crear y switchear directamente
+
+se puede mergear si por ejemplo en un branch se prueban unos archivos nuevos mientras que en otro se trabajan los viejos
+y al final se decide unirlos, en caso de que hayan archivos en comun que son diferentes se deben resolver los conflictos
+lo cual se suele hacer con un programa externo para mergear y elegir que cosas se quedan o no
+
+se puede tranquilamente tener un branch local si no se pushea nunca
+
+el fork clona, pero en lugar de llevarlo a mi pc lo copia a tu cuenta
+
+
+
+
+
+
+
+recordar que puntero a void es como un comodin
